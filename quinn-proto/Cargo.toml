@@ -20,6 +20,8 @@ aws-lc-rs-fips = ["aws-lc-rs", "aws-lc-rs?/fips"]
 bloom = ["dep:fastbloom"]
 # For backwards compatibility, `rustls` forwards to `rustls-ring`
 rustls = ["rustls-ring"]
+# Enable rustls with the use of a custom crypto provider
+rustls-custom = ["dep:rustls"]
 # Enable rustls with the `aws-lc-rs` crypto provider
 rustls-aws-lc-rs = ["dep:rustls", "rustls?/aws-lc-rs", "aws-lc-rs"]
 rustls-aws-lc-rs-fips = ["rustls-aws-lc-rs", "aws-lc-rs-fips"]
